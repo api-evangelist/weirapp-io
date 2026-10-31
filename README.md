@@ -64,5 +64,124 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-weirapp-io is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://weirapp.io/
+Weir provides a public API and MCP server delivering Reddit and X (Twitter) data, enabling developers and AI agents to search posts, read threads, profiles, and receive alerts on mentions. The service offers a free tier with 5,000 credits monthly and pay‑as‑you‑go pricing, supporting multiple languages and integrations with AI assistants like Claude and ChatGPT.
+
+**Areas:** Company · Data · Social Media · API · MCP
+
+## weirapp-io on APIs.io
+
+Everything profiled for weirapp-io is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/weirapp-io/](https://apis.io/providers/weirapp-io/)** — or go straight to one of the APIs or properties below.
+
+### APIs (6)
+
+- [weirapp-io Account API](https://apis.io/apis/weirapp-io/weirapp-io-account-api/) — Introspection: who this key belongs to, what credit it has left, and what its tier allows. These endpoints are free — they never consume credits.
+- [weirapp-io Monitors API](https://apis.io/apis/weirapp-io/weirapp-io-monitors-api/) — Saved queries that run on a schedule and report only what is new. Results are deduplicated by content, so an edited or re-posted item never alerts twice.
+- [weirapp-io Reddit API](https://apis.io/apis/weirapp-io/weirapp-io-reddit-api/) — Reddit-specific operations: communities, comment trees, and scoped search.
+- [weirapp-io System API](https://apis.io/apis/weirapp-io/weirapp-io-system-api/) — Liveness and readiness. Unauthenticated.
+- [weirapp-io Webhooks API](https://apis.io/apis/weirapp-io/weirapp-io-webhooks-api/) — Signed deliveries when a monitor finds something, instead of polling. Every attempt is recorded, including ones that are about to be retried.
+- [weirapp-io X API](https://apis.io/apis/weirapp-io/weirapp-io-x-api/) — X-specific operations: posts, threads, quotes, and edit history; profiles, timelines, followers, and account search; Lists and Spaces; and search with…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Weirapp Io Webhooks](https://apis.io/asyncapis/weirapp-io/weirapp-io-webhooks/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Weirapp Io Agentic Access](https://apis.io/agentic-access/weirapp-io/weirapp-io-agentic-access/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [weirapp-io API Rules](https://apis.io/rules/weirapp-io/weirapp-io-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Weirapp Io Authentication](https://apis.io/security/weirapp-io/weirapp-io-authentication/)
+- [Weirapp Io Domain Security](https://apis.io/security/weirapp-io/weirapp-io-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Weirapp Io Plans Pricing](https://apis.io/plans/weirapp-io/weirapp-io-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://weirapp.io/)
+- [Documentation](https://docs.weirapp.io/)
+- [Getting started](https://docs.weirapp.io/quickstart)
+- [API reference](https://api.weirapp.io/reference)
+- [Pricing](https://weirapp.io/pricing)
+- [Sign up](https://weirapp.io/signup)
+- [Blog](https://weirapp.io/blog)
+- [Terms of service](https://weirapp.io/terms)
+- [Privacy policy](https://weirapp.io/privacy)
+- [Status](https://weirapp.io/status)
+
+## API Evangelist rating
+
+**Kin Score 59.9** — strong · rubric 0.25.0 · scored 2026-10-31
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 53.5 |
+| Contract governance | 79.1 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 56.4 |
+| Access clarity | 73.2 |
+
+**Agent readiness 55.3** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | unknown |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/weirapp-io/](https://apis.io/providers/weirapp-io/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for weirapp-io: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/weirapp-io/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
